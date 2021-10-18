@@ -19,8 +19,8 @@ matrix:
     - MATRIX_EVAL="CC=gcc-6 && CXX=g++-6"
   - os: linux
     arch:
-      - ppc64le
-      - s390x
+    - ppc64le
+    - s390x
     addons:
       apt:
         sources:
