@@ -12,6 +12,8 @@ sudo apt-key add /tmp/openpower-gpgkey-public.asc
 sudo rm -f /tmp/openpower-gpgkey-public.asc 
 sudo apt update	
 
+elif [[ "$ARCH" = "s390x" ]]; then
+:
 else
 
 echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
